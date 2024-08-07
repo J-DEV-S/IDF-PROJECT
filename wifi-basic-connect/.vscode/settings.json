@@ -1,0 +1,13 @@
+{
+    "idf.adapterTargetName": "esp32s2",
+    "idf.flashType": "UART",
+    "idf.portWin": "COM5",
+    "idf.openOcdConfigs": [
+        "interface/ftdi/esp32_devkitj_v1.cfg",
+        "target/esp32s2.cfg"
+    ],
+    "files.associations": {
+        "main.h": "c",
+        "esp_http_server.h": "c"
+    }
+}
