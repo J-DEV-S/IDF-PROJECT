@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: C:\Users\SANTHARAJ\IDF-Files\wifi-basic-connect\build\esp-idf\esp_system\ld\sections.ld.in */
+/* Generated from: C:\Users\SANTHARAJ\IDF-Files\IDF-PROJECT\wifi-basic-connect\build\esp-idf\esp_system\ld\sections.ld.in */
 
 /*
 

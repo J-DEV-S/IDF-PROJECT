@@ -1,0 +1,12 @@
+{
+    "idf.adapterTargetName": "esp32s2",
+    "files.associations": {
+        "gpioconfigs.h": "c",
+        "gpio.h": "c"
+    },
+    "idf.openOcdConfigs": [
+        "interface/ftdi/esp32_devkitj_v1.cfg",
+        "target/esp32s2.cfg"
+    ],
+    "idf.portWin": "COM5"
+}

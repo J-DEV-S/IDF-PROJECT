@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Espressif/frameworks/esp-idf-v5.3/components/**",
+                "C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel-SMP/include",
+                "C:/Espressif/frameworks/esp-idf-v5.3/components/wpa_supplicant/src/drivers",
+                "C:/Espressif/frameworks/esp-idf-v5.3/components/linux/include",
+                "C:/Espressif/frameworks/esp-idf-v5.3/components/hal/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "${config:idf.toolsPathWin}\\tools\\xtensa-esp-elf\\esp-13.2.0_20230928\\xtensa-esp-elf\\bin\\xtensa-esp32s2-elf-gcc.exe"
+        }
+    ],
+    "version": 4
+}

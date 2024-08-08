@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/SANTHARAJ/IDF-Files/wifi-basic-connect/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/SANTHARAJ/IDF-Files/IDF-PROJECT/wifi-basic-connect/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded

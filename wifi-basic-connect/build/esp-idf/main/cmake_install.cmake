@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/SANTHARAJ/IDF-Files/wifi-basic-connect/main
+# Install script for directory: C:/Users/SANTHARAJ/IDF-Files/IDF-PROJECT/wifi-basic-connect/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
