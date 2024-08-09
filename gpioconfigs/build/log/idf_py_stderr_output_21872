@@ -1,0 +1,55 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM5 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x4002520e: panic_abort at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/esp_system/panic.c:466
+0x40029155: esp_system_abort at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4002e8d9: __assert_func at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/newlib/assert.c:81
+0x4002994a: xQueueSemaphoreTake at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x40029ada: xQueueTakeMutexRecursive at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:835
+0x40025fa5: lock_acquire_generic at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/newlib/locks.c:144
+0x400260ad: _lock_acquire_recursive at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/newlib/locks.c:158
+0x40086213: uart_write at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/vfs/vfs_uart.c:209
+0x400851a3: console_write at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x40084d2e: esp_vfs_write at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4001a193: _write_r in ROM
+0x4001a6c5: __swrite in ROM
+0x40001b0e: __sflush_r in ROM
+0x40001b94: _fflush_r in ROM
+0x4008c481: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400903bb: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x4008fd7e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4008c529: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x40098359: esp_log_writev at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/log/log.c:212
+0x4002e665: esp_log_write at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/log/log.c:222
+0x40029c04: vPortTaskWrapper at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137 (discriminator 1)
+[0m
+[0;33m0x400251f6: esp_restart_noos at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/esp_system/port/soc/esp32s2/system_internal.c:118
+[0m
+[0;33m0x4002520e: panic_abort at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/esp_system/panic.c:466
+0x40029155: esp_system_abort at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4002e8d9: __assert_func at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/newlib/assert.c:81
+0x4002994a: xQueueSemaphoreTake at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x40029ada: xQueueTakeMutexRecursive at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:835
+0x40025fa5: lock_acquire_generic at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/newlib/locks.c:144
+0x400260ad: _lock_acquire_recursive at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/newlib/locks.c:158
+0x40086213: uart_write at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/vfs/vfs_uart.c:209
+0x400851a3: console_write at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/vfs/vfs_console.c:73 (discriminator 1)
+0x40084d2e: esp_vfs_write at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/vfs/vfs.c:482 (discriminator 4)
+0x4001a193: _write_r in ROM
+0x4001a6c5: __swrite in ROM
+0x40001b0e: __sflush_r in ROM
+0x40001b94: _fflush_r in ROM
+0x4008c481: __sfvwrite_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+0x400903bb: __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfiprintf.c:429
+ (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+0x4008fd7e: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+0x4008c529: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x40098359: esp_log_writev at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/log/log.c:212
+0x4002e665: esp_log_write at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/log/log.c:222
+0x40029c04: vPortTaskWrapper at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:137 (discriminator 1)
+[0m
+[0;33m0x400251f6: esp_restart_noos at C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/esp_system/port/soc/esp32s2/system_internal.c:118
+[0m
+[0m

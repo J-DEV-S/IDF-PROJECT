@@ -8,20 +8,37 @@ static void gpio_init(void)
 {
     int i_loop=0;
 
-    my_gp[0].gpio =   GPIO_5;
-    my_gp[0].mode =   GPIO_MODE_OUTPUT;
+    my_gp[0].gpio =   4;
+    my_gp[1].gpio =   5;
+    my_gp[2].gpio =   6;
 
-    for(i_loop=0;i_loop<1;i_loop++)
+    for(i_loop=0;i_loop<3;i_loop++)
     {
-        gpio_set_direction(my_gp[i_loop].gpio, !my_gp[i_loop].mode);
+        gpio_set_direction(my_gp[i_loop].gpio, GPIO_MODE_OUTPUT);
     }
+}
+
+static void gpio_control(void)
+{
+    int i=0,level=0;
+    for(i=0;i<3;i++)
+    {
+        gpio_set_level(my_gp[i].gpio,!level);
+        LOGI("in");
+    }
+
 }
 
 void app_main()
 {
+    gpio_init();
+    void *p;
+    p=&gpio_control;
+
     while(true)
     {
         vTaskDelay(5000);
-        gpio_init();
+        xTaskCreate(gpio_control, "gpio", 1024, NULL, 1, NULL);
+
     }
 }
