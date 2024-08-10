@@ -4,7 +4,9 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/Espressif/frameworks/esp-idf-v5.3/components/**"
+                "C:/Espressif/frameworks/esp-idf-v5.3/components/**",
+                "C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/FreeRTOS-Kernel-SMP/include",
+                "C:/Espressif/frameworks/esp-idf-v5.3/components/freertos/config/include/freertos"
             ],
             "defines": [
                 "_DEBUG",

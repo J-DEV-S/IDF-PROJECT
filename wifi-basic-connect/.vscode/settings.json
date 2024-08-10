@@ -8,6 +8,8 @@
     ],
     "files.associations": {
         "main.h": "c",
-        "esp_http_server.h": "c"
+        "esp_http_server.h": "c",
+        "mywifi.h": "c",
+        "freertos.h": "c"
     }
 }

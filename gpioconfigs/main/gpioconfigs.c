@@ -6,7 +6,7 @@ static void gpio_init(void) {
     // Initialize the GPIO array with the pin numbers
     my_gp[0].gpio = 4;
     my_gp[1].gpio = 5;
-    my_gp[2].gpio = 6;
+    my_gp[2].gpio = 18;
 
     // Set the direction of each GPIO to output
     for(int i_loop = 0; i_loop < 3; i_loop++) {

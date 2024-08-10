@@ -18,5 +18,6 @@ typedef struct {
     int gpio;
 } my_gpio_t;
 
+
 // Array to hold GPIO configurations
 my_gpio_t my_gp[10];

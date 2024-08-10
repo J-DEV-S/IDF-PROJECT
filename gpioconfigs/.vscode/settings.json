@@ -2,7 +2,9 @@
     "idf.adapterTargetName": "esp32s2",
     "files.associations": {
         "gpioconfigs.h": "c",
-        "gpio.h": "c"
+        "gpio.h": "c",
+        "sdkconfig.h": "c",
+        "task.h": "c"
     },
     "idf.openOcdConfigs": [
         "interface/ftdi/esp32_devkitj_v1.cfg",
