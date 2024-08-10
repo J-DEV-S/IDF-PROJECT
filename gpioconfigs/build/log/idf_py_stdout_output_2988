@@ -1,0 +1,28 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\SANTHARAJ\IDF-Files\IDF-PROJECT\gpioconfigs\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/SANTHARAJ/IDF-Files/IDF-PROJECT/gpioconfigs/build/bootloader/bootloader.bin"
+Bootloader binary size 0x55f0 bytes. 0x1a10 bytes (23%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/gpioconfigs.c.obj
+C:/Users/SANTHARAJ/IDF-Files/IDF-PROJECT/gpioconfigs/main/gpioconfigs.c: In function 'app_main':
+C:/Users/SANTHARAJ/IDF-Files/IDF-PROJECT/gpioconfigs/main/gpioconfigs.c:37:17: warning: passing argument 1 of 'xTaskCreate' from incompatible pointer type [-Wincompatible-pointer-types]
+   37 |     xTaskCreate(gpio_control, "gpio_task", 1024, NULL, 1, NULL);
+      |                 ^~~~~~~~~~~~
+      |                 |
+      |                 void (*)(void)
+In file included from C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h:20,
+                 from C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:1533,
+                 from C:/Users/SANTHARAJ/IDF-Files/IDF-PROJECT/gpioconfigs/main/gpioconfigs.h:10,
+                 from C:/Users/SANTHARAJ/IDF-Files/IDF-PROJECT/gpioconfigs/main/gpioconfigs.c:1:
+C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:371:44: note: expected 'TaskFunction_t' {aka 'void (*)(void *)'} but argument is of type 'void (*)(void)'
+  371 |     BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
+      |                             ~~~~~~~~~~~~~~~^~~~~~~~~~
+[3/7] Linking C static library esp-idf\main\libmain.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable gpioconfigs.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32s2 image...
+Merged 2 ELF sections
+Successfully created esp32s2 image.
+Generated C:/Users/SANTHARAJ/IDF-Files/IDF-PROJECT/gpioconfigs/build/gpioconfigs.bin
+[7/7] cmd.exe /C "cd /D C:\Users\SANTHARAJ\IDF-Files\IDF-PROJECT\gpioconfigs\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Users/SANTHARAJ/esp/v5.2.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/SANTHARAJ/IDF-Files/IDF-PROJECT/gpioconfigs/build/partition_table/partition-table.bin C:/Users/SANTHARAJ/IDF-Files/IDF-PROJECT/gpioconfigs/build/gpioconfigs.bin"
+gpioconfigs.bin binary size 0x2fa20 bytes. Smallest app partition is 0x100000 bytes. 0xd05e0 bytes (81%) free.
