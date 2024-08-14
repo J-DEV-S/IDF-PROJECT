@@ -1,0 +1,322 @@
+ESP-ROM:esp32s2-rc4-20191025
+Build:Oct 25 2019
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3ffe6110,len:0x186c
+load:0x4004b000,len:0x4
+load:0x4004b004,len:0xb0c
+load:0x4004f000,len:0x320c
+entry 0x4004b1cc
+[0;32mI (23) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Aug 13 2024 19:11:15[0m
+[0;32mI (24) boot: chip revision: v0.0[0m
+[0;32mI (27) boot.esp32s2: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32s2: SPI Mode       : DIO[0m
+[0;32mI (37) boot.esp32s2: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f000020 size=21454h (136276) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0003147c vaddr=3ffc8b30 size=03554h ( 13652) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=000349d8 vaddr=40024000 size=0b640h ( 46656) load[0m
+[0;32mI (137) esp_image: segment 3: paddr=00040020 vaddr=40080020 size=8315ch (536924) map[0m
+[0;32mI (245) esp_image: segment 4: paddr=000c3184 vaddr=4002f640 size=094ech ( 38124) load[0m
+[0;32mI (265) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (265) boot: Disabling RNG early entropy source...[0m
+[0;32mI (276) cpu_start: Unicore app[0m
+[0;32mI (276) cache: Instruction cache 	: size 8KB, 4Ways, cache line size 32Byte[0m
+[0;32mI (277) cache: Data cache 		: size 8KB, 4Ways, cache line size 32Byte[0m
+[0;32mI (302) cpu_start: Pro cpu start user code[0m
+[0;32mI (302) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (302) cpu_start: Application information:[0m
+[0;32mI (305) cpu_start: Project name:     project-name[0m
+[0;32mI (311) cpu_start: App version:      c83dc509-dirty[0m
+[0;32mI (316) cpu_start: Compile time:     Aug 13 2024 19:10:47[0m
+[0;32mI (322) cpu_start: ELF file SHA256:  67c1f5e50...[0m
+[0;32mI (328) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (333) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (337) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (342) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (347) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (354) heap_init: At 3FFD01A8 len 0002BE58 (175 KiB): RAM[0m
+[0;32mI (360) heap_init: At 3FFFC000 len 00003A10 (14 KiB): RAM[0m
+[0;32mI (366) heap_init: At 3FF9E000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (373) spi_flash: detected chip: generic[0m
+[0;32mI (377) spi_flash: flash io: dio[0m
+[0;33mW (381) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (395) main_task: Started on CPU0[0m
+[0;32mI (395) main_task: Calling app_main()[0m
+I (415) wifi:wifi driver task: 3ffd8648, prio:23, stack:6656, core=0
+I (415) wifi:wifi firmware version: 3e0076f
+I (415) wifi:wifi certification version: v7.0
+I (415) wifi:config NVS flash: enabled
+I (415) wifi:config nano formating: disabled
+I (425) wifi:Init data frame dynamic rx buffer num: 32
+I (425) wifi:Init static rx mgmt buffer num: 5
+I (435) wifi:Init management short buffer num: 32
+I (435) wifi:Init dynamic tx buffer num: 32
+I (435) wifi:Init static rx buffer size: 1600
+I (445) wifi:Init static rx buffer num: 10
+I (445) wifi:Init dynamic rx buffer num: 32
+[0;32mI (455) wifi_init: rx ba win: 6[0m
+[0;32mI (455) wifi_init: tcpip mbox: 32[0m
+[0;32mI (455) wifi_init: udp mbox: 6[0m
+[0;32mI (465) wifi_init: tcp mbox: 6[0m
+[0;32mI (465) wifi_init: tcp tx win: 5760[0m
+[0;32mI (475) wifi_init: tcp rx win: 5760[0m
+[0;32mI (475) wifi_init: tcp mss: 1440[0m
+[0;32mI (475) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (485) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (485) phy_init: phy_version 2500,8368a9b,Mar 21 2024,19:51:06[0m
+I (535) wifi:mode : sta (a0:76:4e:93:07:88)
+I (535) wifi:enable tsf
+WiFi connecting ... 
+[0;32mI (545) main_task: Returned from app_main()[0m
+I (545) wifi:new:<10,2>, old:<1,0>, ap:<255,255>, sta:<10,2>, prof:1
+I (545) wifi:state: init -> auth (b0)
+I (555) wifi:state: auth -> assoc (0)
+I (555) wifi:state: assoc -> run (10)
+I (645) wifi:connected with Santharaj, aid = 3, channel 10, 40D, bssid = cc:32:e5:c3:56:3a
+I (655) wifi:security: WPA2-PSK, phy: bgn, rssi: -39
+I (655) wifi:pm start, type: 1
+
+I (655) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+WiFi connected ... 
+I (675) wifi:<ba-add>idx:0 (ifx:0, cc:32:e5:c3:56:3a), tid:0, ssn:3, winSize:64
+I (745) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1665) esp_netif_handlers: sta ip: 192.168.0.102, mask: 255.255.255.0, gw: 192.168.0.1[0m
+WiFi got IP ... 
+
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x40007e40  PS      : 0x00060c30  A0      : 0x80090ab0  A1      : 0x3ffe07b0  
+A2      : 0x00000000  A3      : 0xfffffffc  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x8008ff81  A9      : 0x3ffe0780  
+A10     : 0x00000000  A11     : 0x00000006  A12     : 0x3ffe07c0  A13     : 0x00000008  
+A14     : 0xffffffff  A15     : 0x00000003  SAR     : 0x0000000c  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x3ffe07c0  LEND    : 0x00000008  LCOUNT  : 0x40026878  
+
+
+Backtrace: 0x40007e3d:0x3ffe07b0 0x40090aad:0x3ffe07c0 0x400871c5:0x3ffe0800 0x400910ad:0x3ffe0820 0x400918b1:0x3ffe0860 0x40091950:0x3ffe08f0 0x40090888:0x3ffe0910 0x4008fbd0:0x3ffe0930 0x400fc5d7:0x3ffe0950 0x400902bf:0x3ffe0970 0x40090327:0x3ffe09c0 0x4002ce09:0x3ffe09e0
+
+
+
+
+ELF file SHA256: 67c1f5e50
+
+Rebooting...
+ESP-ROM:esp32s2-rc4-20191025
+Build:Oct 25 2019
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400253aa
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3ffe6110,len:0x186c
+load:0x4004b000,len:0x4
+load:0x4004b004,len:0xb0c
+load:0x4004f000,len:0x320c
+entry 0x4004b1cc
+[0;32mI (26) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Aug 13 2024 19:11:15[0m
+[0;32mI (26) boot: chip revision: v0.0[0m
+[0;32mI (30) boot.esp32s2: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32s2: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s2: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=3f000020 size=21454h (136276) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0003147c vaddr=3ffc8b30 size=03554h ( 13652) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=000349d8 vaddr=40024000 size=0b640h ( 46656) load[0m
+[0;32mI (140) esp_image: segment 3: paddr=00040020 vaddr=40080020 size=8315ch (536924) map[0m
+[0;32mI (247) esp_image: segment 4: paddr=000c3184 vaddr=4002f640 size=094ech ( 38124) load[0m
+[0;32mI (267) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (267) boot: Disabling RNG early entropy source...[0m
+[0;32mI (279) cpu_start: Unicore app[0m
+[0;32mI (279) cache: Instruction cache 	: size 8KB, 4Ways, cache line size 32Byte[0m
+[0;32mI (279) cache: Data cache 		: size 8KB, 4Ways, cache line size 32Byte[0m
+[0;32mI (298) cpu_start: Pro cpu start user code[0m
+[0;32mI (298) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (298) cpu_start: Application information:[0m
+[0;32mI (302) cpu_start: Project name:     project-name[0m
+[0;32mI (308) cpu_start: App version:      c83dc509-dirty[0m
+[0;32mI (313) cpu_start: Compile time:     Aug 13 2024 19:10:47[0m
+[0;32mI (320) cpu_start: ELF file SHA256:  67c1f5e50...[0m
+[0;32mI (325) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (330) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (334) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (339) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (344) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (351) heap_init: At 3FFD01A8 len 0002BE58 (175 KiB): RAM[0m
+[0;32mI (357) heap_init: At 3FFFC000 len 00003A10 (14 KiB): RAM[0m
+[0;32mI (363) heap_init: At 3FF9E000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (371) spi_flash: detected chip: generic[0m
+[0;32mI (374) spi_flash: flash io: dio[0m
+[0;33mW (378) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (392) main_task: Started on CPU0[0m
+[0;32mI (392) main_task: Calling app_main()[0m
+I (412) wifi:wifi driver task: 3ffd8648, prio:23, stack:6656, core=0
+I (412) wifi:wifi firmware version: 3e0076f
+I (412) wifi:wifi certification version: v7.0
+I (412) wifi:config NVS flash: enabled
+I (412) wifi:config nano formating: disabled
+I (422) wifi:Init data frame dynamic rx buffer num: 32
+I (422) wifi:Init static rx mgmt buffer num: 5
+I (432) wifi:Init management short buffer num: 32
+I (432) wifi:Init dynamic tx buffer num: 32
+I (432) wifi:Init static rx buffer size: 1600
+I (442) wifi:Init static rx buffer num: 10
+I (442) wifi:Init dynamic rx buffer num: 32
+[0;32mI (452) wifi_init: rx ba win: 6[0m
+[0;32mI (452) wifi_init: tcpip mbox: 32[0m
+[0;32mI (452) wifi_init: udp mbox: 6[0m
+[0;32mI (462) wifi_init: tcp mbox: 6[0m
+[0;32mI (462) wifi_init: tcp tx win: 5760[0m
+[0;32mI (472) wifi_init: tcp rx win: 5760[0m
+[0;32mI (472) wifi_init: tcp mss: 1440[0m
+[0;32mI (472) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (482) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (482) phy_init: phy_version 2500,8368a9b,Mar 21 2024,19:51:06[0m
+I (532) wifi:mode : sta (a0:76:4e:93:07:88)
+I (532) wifi:enable tsf
+WiFi connecting ... 
+[0;32mI (542) main_task: Returned from app_main()[0m
+I (542) wifi:new:<10,2>, old:<1,0>, ap:<255,255>, sta:<10,2>, prof:1
+I (542) wifi:state: init -> auth (b0)
+I (552) wifi:state: auth -> assoc (0)
+I (552) wifi:state: assoc -> run (10)
+I (622) wifi:connected with Santharaj, aid = 3, channel 10, 40D, bssid = cc:32:e5:c3:56:3a
+I (622) wifi:security: WPA2-PSK, phy: bgn, rssi: -42
+I (632) wifi:pm start, type: 1
+
+I (632) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+WiFi connected ... 
+I (652) wifi:<ba-add>idx:0 (ifx:0, cc:32:e5:c3:56:3a), tid:0, ssn:12, winSize:64
+I (712) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1642) esp_netif_handlers: sta ip: 192.168.0.102, mask: 255.255.255.0, gw: 192.168.0.1[0m
+WiFi got IP ... 
+
+Guru Meditation Error: Core  0 panic'ed (LoadProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x40007e40  PS      : 0x00060430  A0      : 0x80090ab0  A1      : 0x3ffe07b0  
+A2      : 0x00000000  A3      : 0xfffffffc  A4      : 0x000000ff  A5      : 0x0000ff00  
+A6      : 0x00ff0000  A7      : 0xff000000  A8      : 0x8008ff81  A9      : 0x3ffe0780  
+A10     : 0x00000000  A11     : 0x00000006  A12     : 0x3ffe07c0  A13     : 0x00000008  
+A14     : 0xffffffff  A15     : 0x00000003  SAR     : 0x0000000c  EXCCAUSE: 0x0000001c  
+EXCVADDR: 0x00000000  LBEG    : 0x3ffe07c0  LEND    : 0x00000008  LCOUNT  : 0x40026878  
+
+
+Backtrace: 0x40007e3d:0x3ffe07b0 0x40090aad:0x3ffe07c0 0x400871c5:0x3ffe0800 0x400910ad:0x3ffe0820 0x400918b1:0x3ffe0860 0x40091950:0x3ffe08f0 0x40090888:0x3ffe0910 0x4008fbd0:0x3ffe0930 0x400fc5d7:0x3ffe0950 0x400902bf:0x3ffe0970 0x40090327:0x3ffe09c0 0x4002ce09:0x3ffe09e0
+
+
+
+
+ELF file SHA256: 67c1f5e50
+
+Rebooting...
+ESP-ROM:esp32s2-rc4-20191025
+Build:Oct 25 2019
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400253aa
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3ffe6110,len:0x186c
+load:0x4004b000,len:0x4
+load:0x4004b004,len:0xb0c
+load:0x4004f000,len:0x320c
+entry 0x4004b1cc
+[0;32mI (26) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Aug 13 2024 19:11:15[0m
+[0;32mI (26) boot: chip revision: v0.0[0m
+[0;32mI (30) boot.esp32s2: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32s2: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s2: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (75) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (82) boot: End of partition table[0m
+[0;32mI (87) esp_image: segment 0: paddr=00010020 vaddr=3f000020 size=21454h (136276) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0003147c vaddr=3ffc8b30 size=03554h ( 13652) load[0m
+[0;32mI (126) esp_image: segment 2: paddr=000349d8 vaddr=40024000 size=0b640h ( 46656) load[0m
+[0;32mI (140) esp_image: segment 3: paddr=00040020 vaddr=40080020 size=8315ch (536924) map[0m
+[0;32mI (247) esp_image: segment 4: paddr=000c3184 vaddr=4002f640 size=094ech ( 38124) load[0m
+[0;32mI (267) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (267) boot: Disabling RNG early entropy source...[0m
+[0;32mI (279) cpu_start: Unicore app[0m
+[0;32mI (279) cache: Instruction cache 	: size 8KB, 4Ways, cache line size 32Byte[0m
+[0;32mI (279) cache: Data cache 		: size 8KB, 4Ways, cache line size 32Byte[0m
+[0;32mI (298) cpu_start: Pro cpu start user code[0m
+[0;32mI (298) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (298) cpu_start: Application information:[0m
+[0;32mI (302) cpu_start: Project name:     project-name[0m
+[0;32mI (308) cpu_start: App version:      c83dc509-dirty[0m
+[0;32mI (313) cpu_start: Compile time:     Aug 13 2024 19:10:47[0m
+[0;32mI (320) cpu_start: ELF file SHA256:  67c1f5e50...[0m
+[0;32mI (325) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (330) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (334) cpu_start: Max chip rev:     v1.99 [0m
+[0;32mI (339) cpu_start: Chip rev:         v0.0[0m
+[0;32mI (344) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (351) heap_init: At 3FFD01A8 len 0002BE58 (175 KiB): RAM[0m
+[0;32mI (357) heap_init: At 3FFFC000 len 00003A10 (14 KiB): RAM[0m
+[0;32mI (363) heap_init: At 3FF9E000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (371) spi_flash: detected chip: generic[0m
+[0;32mI (374) spi_flash: flash io: dio[0m
+[0;33mW (378) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (392) main_task: Started on CPU0[0m
+[0;32mI (392) main_task: Calling app_main()[0m
+I (412) wifi:wifi driver task: 3ffd8648, prio:23, stack:6656, core=0
+I (412) wifi:wifi firmware version: 3e0076f
+I (412) wifi:wifi certification version: v7.0
+I (412) wifi:config NVS flash: enabled
+I (412) wifi:config nano formating: disabled
+I (422) wifi:Init data frame dynamic rx buffer num: 32
+I (422) wifi:Init static rx mgmt buffer num: 5
+I (432) wifi:Init management short buffer num: 32
+I (432) wifi:Init dynamic tx buffer num: 32
+I (432) wifi:Init static rx buffer size: 1600
+I (442) wifi:Init static rx buffer num: 10
+I (442) wifi:Init dynamic rx buffer num: 32
+[0;32mI (452) wifi_init: rx ba win: 6[0m
+[0;32mI (452) wifi_init: tcpip mbox: 32[0m
+[0;32mI (452) wifi_init: udp mbox: 6[0m
+[0;32mI (462) wifi_init: tcp mbox: 6[0m
+[0;32mI (462) wifi_init: tcp tx win: 5760[0m
+[0;32mI (472) wifi_init: tcp rx win: 5760[0m
+[0;32mI (472) wifi_init: tcp mss: 1440[0m
+[0;32mI (472) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (482) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (482) phy_init: phy_version 2500,8368a9b,Mar 21 2024,19:51:06[0m
+I (532) wifi:mode : sta (a0:76:4e:93:07:88)
+I (532) wifi:enable tsf
+WiFi connecting ... 
+[0;32mI (542) main_task: Returned from app_main()[0m
+I (542) wifi:new:<10,2>, old:<1,0>, ap:<255,255>, sta:<10,2>, prof:1
+I (542) wifi:state: init -> auth (b0)
+I (552) wifi:state: auth -> assoc (0)
+I (552) wifi:state: assoc -> run (10)
+I (612) wifi:connected with Santharaj, aid = 3, channel 10, 40D, bssid = cc:32:e5:c3:56:3a
+I (612) wifi:security: WPA2-PSK, phy: bgn, rssi: -44
+I (622) wifi:pm start, type: 1
+
+I (622) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+WiFi connected ... 
+I (642) wifi:<ba-add>idx:0 (ifx:0, cc:32:e5:c3:56:3a), tid:0, ssn:23, winSize:64
+I (702) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (1632) esp_netif_handlers: sta ip: 192.168.0.102, mask: 255.255.255.0, gw: 192.168.0.1[0m
+WiFi got IP ... 
+
